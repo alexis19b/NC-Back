@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const { check } = require("express-validator");
-const { validateFields } = require("../Middleware/ValidateFields");
+const { validateFields } = require("../middleware/ValidateFields");
 const {
   getAllMember,
   postMember,
   putMember,
-} = require("../Controllers/MemberControllers");
+} = require("../controllers/MemberControllers");
 
 router.get("/", getAllMember);
 
