@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 //Conexion a la base de datos
 dbConection();
-//Cors hola
+//Cors
 app.use(cors());
 app.use("/api/members", useMember);
 app.use("/api/teams", useTeam);
