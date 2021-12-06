@@ -6,15 +6,17 @@ async function getAllTeam(req, res) {
 }
 
 async function postTeam(req, res) {
-  const { number, teamleader, stack, project, members, cohort } = req.body;
+  const { name, number, teamleader, stack, project, members, cohort } =
+    req.body;
   try {
     const newTeam = await Team.create({
+      name,
       number,
       project,
       stack,
       members,
       teamleader,
-      cohort
+      cohort,
     });
     res.status(201).json(newTeam);
   } catch (error) {
