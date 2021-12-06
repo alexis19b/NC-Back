@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const { dbConection } = require("./database/Config");
+const { dbConection } = require("./database/config");
 const cors = require("cors");
 const useMember = require("./routes/Member");
 const useTeam = require("./routes/Team");
