@@ -1,10 +1,10 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const { dbConection } = require("./DataBase/Config");
+const { dbConection } = require("./database/Config");
 const cors = require("cors");
-const useMember = require("./Routes/Member");
-const useTeam = require("./Routes/Team");
-const useUser = require("./Routes/User");
+const useMember = require("./routes/Member");
+const useTeam = require("./routes/Team");
+const useUser = require("./routes/User");
 
 //Inicio de servidor de express
 const app = express();
