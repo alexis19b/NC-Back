@@ -1,4 +1,4 @@
-const Member = require("../Models/Member");
+const Member = require("../models/Member");
 
 async function getAllMember(req, res) {
   const getAllMembers = await Member.find();
