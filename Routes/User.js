@@ -4,8 +4,8 @@ const {
   getAllUser,
   postUser,
   putUser,
-} = require("../Controllers/UsersControllers");
-const { validateFields } = require("../Middleware/ValidateFields");
+} = require("../controllers/UsersControllers");
+const { validateFields } = require("../middleware/ValidateFields");
 
 router.get("/", getAllUser);
 

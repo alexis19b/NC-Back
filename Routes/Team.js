@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const { check } = require("express-validator");
-const { validateFields } = require("../Middleware/ValidateFields");
+const { validateFields } = require("../middleware/ValidateFields");
 const {
   getAllTeam,
   postTeam,
   putTeam,
   putMemberTeam,
-} = require("../Controllers/TeamControllers");
+} = require("../controllers/TeamControllers");
 
 router.get("/", getAllTeam);
 
