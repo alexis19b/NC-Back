@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const dbConection  = require("./database/config");
+const dbConection = require("./database/config");
 const cors = require("cors");
 const useMember = require("./routes/Member");
 const useTeam = require("./routes/Team");
@@ -16,13 +16,11 @@ app.use(express.json());
 dbConection();
 //Cors
 app.use(cors());
-app.use( express.static('public') );
+app.use(express.static("public"));
 app.use("/api/members", useMember);
 app.use("/api/teams", useTeam);
 app.use("/api/users", useUser);
 
-const PORT = process.env.PORT || 5000
-
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto ${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
 });
