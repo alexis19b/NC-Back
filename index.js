@@ -20,8 +20,6 @@ app.use("/api/members", useMember);
 app.use("/api/teams", useTeam);
 app.use("/api/users", useUser);
 
-const PORT = process.env.PORT || 5000
-
-app.listen(PORT, () => {
-  console.log("Servidor corriendo en el puerto", PORT);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor corriendo en el puerto${process.env.PORT}`);
 });
