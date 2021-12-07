@@ -16,7 +16,6 @@ app.use(express.json());
 dbConection();
 //Cors
 app.use(cors());
-app.use( express.static('public') );
 app.use("/api/members", useMember);
 app.use("/api/teams", useTeam);
 app.use("/api/users", useUser);
