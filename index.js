@@ -6,7 +6,7 @@ const useMember = require("./routes/Member");
 const useTeam = require("./routes/Team");
 const useUser = require("./routes/User");
 
-//Inicio de servidor de express
+//Inicio de servidor de expresss
 const app = express();
 //Manejo de Variables de entorno
 dotenv.config();
