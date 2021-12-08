@@ -15,7 +15,7 @@ router.post(
   [
     check(
       "stack",
-      "La tecnologia debe ser de tipo cadena de caracteres"
+      "La tecnologia debe ser de tipo cadena de caracteres obligatorio"
     ).isString(),
 
     validateFields,
